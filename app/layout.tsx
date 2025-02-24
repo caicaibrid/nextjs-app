@@ -27,6 +27,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        跟layout.tsx一样，这里是根布局
         {children}
       </body>
     </html>
