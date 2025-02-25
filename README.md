@@ -2,6 +2,11 @@ nextjs 学习
 
 .env中的变量可以通过 ```process.env.变量名``` 来获取
 
+branch:
+    template: nextjs模版项目,包括环境变量和基础配置
+    main: 学习的分支
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
