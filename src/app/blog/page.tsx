@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
 const getData = (): Promise<number[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
