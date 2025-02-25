@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const getData = (): Promise<number[]> => {
+const getData = (): Promise<number[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(new Array(20).fill(0));

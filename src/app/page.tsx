@@ -1,5 +1,4 @@
 import config from "../config";
-import { redirect } from "next/navigation";
 import routes from "../config/routes";
 import Link from "next/link";
 export default function Page() {
