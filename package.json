@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "APP_ENV=development next dev",
+    "dev:test": "APP_ENV=test next dev",
+    "dev:prod": "APP_ENV=production next dev",
+    "build": "APP_ENV=development next build",
+    "build:test": "APP_ENV=test next build",
+    "build:prod": "APP_ENV=production next build",
     "start": "next start",
     "lint": "next lint"
   },

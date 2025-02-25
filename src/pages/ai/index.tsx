@@ -1,3 +1,3 @@
 export default function Ai() {
-  return <div>AI</div>;
+  return <div>page router - AI page</div>;
 }
