@@ -5,7 +5,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <div>App router 子 layout</div>
+      <div>App router - AII 路由 - 子 layout</div>
       <div>{children}</div>
     </>
   );
