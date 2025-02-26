@@ -1,4 +1,4 @@
-export default [
+const routes = [
   {
     name: "App Router",
     children: [
@@ -28,3 +28,5 @@ export default [
     ],
   },
 ];
+
+export default routes;
