@@ -4,6 +4,10 @@ export async function generateStaticParams() {
   return res;
 }
 
+export const revalidate = 60;
+
+export const dynamicParams = true;
+
 export default async function BlogChild({
   params,
 }: {

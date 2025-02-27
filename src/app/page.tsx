@@ -1,7 +1,9 @@
 import config from "../config";
 import routes from "../config/routes";
 import Link from "next/link";
-export default function Page() {
+import http from "../service/http";
+export default async function Page() {
+  const res = await http("https://www.baidu.com");
   const APP_ENV: string = process.env.APP_ENV || "";
   return (
     <>
@@ -25,6 +27,8 @@ export default function Page() {
           );
         })}
       </div>
+      <div className="p-5">axios 请求</div>
+      <pre className="p-5">{res.data}</pre>
     </>
   );
 }
