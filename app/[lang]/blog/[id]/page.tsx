@@ -1,4 +1,4 @@
-import { getData } from "@/src/service/blog";
+import { getData } from "@/service/blog";
 export async function generateStaticParams() {
   const res = await getData();
   return res;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getData } from "@/src/service/blog";
+import { getData } from "@/service/blog";
 // 防止预渲染
 // export const dynamic = "force-dynamic";
 

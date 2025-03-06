@@ -1,5 +1,6 @@
 "use client";
 
+import { getDictionary } from "@/get-dictionaries";
 import { useRouter } from "next/navigation";
 export default function AIII() {
   const router = useRouter();
