@@ -1,0 +1,37 @@
+{
+    "editor.indentSize": "tabSize",
+    "editor.rulers": [],
+    "terminal.integrated.automationProfile.linux": {},
+    "terminal.integrated.env.osx": {},
+    "leek-fund.binance": [
+        "BTC_USDT",
+        "ETH_USDT",
+        "EOS_USDT"
+    ],
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "plist"
+    ],
+    "auto-close-tag.disableOnLanguage": [],
+    "auto-rename-tag.activationOnLanguage": [
+        "*"
+    ],
+    "cSpell.languageSettings": []
+}
