@@ -2,6 +2,7 @@ import { i18n, type Locale } from "../../i18n-config";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LocaleSwitcher from "./components/locale-switcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,10 @@ export default async function RootLayout(props: {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div id="root" className="flex flex-col">
-          <div className="text-center py-5 bg-slate-700">个人博客</div>
+          <div className="flex p-5 justify-between">
+            <div>个人博客</div>
+            <LocaleSwitcher />
+          </div>
           <div className="flex-1 overflow-y-auto">{children}</div>
           <div className="text-center py-5 bg-slate-500">Nextjs Study</div>
         </div>

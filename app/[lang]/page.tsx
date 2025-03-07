@@ -2,7 +2,6 @@ import config from "../../config";
 import routes from "../../config/routes";
 import Link from "next/link";
 import http from "../../service/http";
-import LocaleSwitcher from "./components/locale-switcher";
 import { getDictionary } from "@/get-dictionaries";
 import { Locale } from "@/i18n-config";
 export default async function Page(props: {
@@ -12,12 +11,8 @@ export default async function Page(props: {
   const APP_ENV: string = process.env.APP_ENV || "";
   const { lang } = await props.params;
   const dictionary = await getDictionary(lang);
-  console.log(lang, dictionary);
   return (
     <>
-      <div className="p-5">
-        <LocaleSwitcher />
-      </div>
       <div className="p-5">name: {dictionary.name}</div>
       <div className="p-5">
         当前的环境和URL: {process.env.APP_ENV} - {config[APP_ENV]?.baseUrl}
